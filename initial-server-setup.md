@@ -1,6 +1,12 @@
-- 'sudo adduser ilia': Создаём пользователя пользователя
-- 'sudo usermod -aG sudo ilia': Добавляем пользователя в группу sudo
-- 'groups newuser': Проверяем, что пользователь добавлен в группу sudo
+``` shell
+$ bash < <(curl -s https://raw.githubusercontent.com/babashka/babashka/master/install)
+```
+
+```shell
+$ sudo adduser ilia Создаём пользователя пользователя
+$ sudo usermod -aG sudo ilia Добавляем пользователя в группу sudo
+$ groups newuser Проверяем, что пользователь добавлен в группу sudo
+```
 
 ### Для повышения безопасности рекомендуется отключить возможность прямого входа под пользователем root. В Ubuntu, как и во многих других дистрибутивах Linux, это можно сделать, изменив файл /etc/ssh/sshd_config и установив параметр PermitRootLogin в значение no.
 
