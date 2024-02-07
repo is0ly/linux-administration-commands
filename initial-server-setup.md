@@ -1,11 +1,15 @@
-``` shell
-$ bash < <(curl -s https://raw.githubusercontent.com/babashka/babashka/master/install)
-```
+## Первоначальная настройка сервера
+
+Создаём пользователя и добавляем его в группу sudo
 
 ```shell
-$ sudo adduser ilia Создаём пользователя пользователя
-$ sudo usermod -aG sudo ilia Добавляем пользователя в группу sudo
-$ groups newuser Проверяем, что пользователь добавлен в группу sudo
+sudo adduser ilia
+```
+```shell
+sudo usermod -aG sudo user_name
+```
+```shell
+groups user_name
 ```
 
 ### Для повышения безопасности рекомендуется отключить возможность прямого входа под пользователем root. В Ubuntu, как и во многих других дистрибутивах Linux, это можно сделать, изменив файл /etc/ssh/sshd_config и установив параметр PermitRootLogin в значение no.
