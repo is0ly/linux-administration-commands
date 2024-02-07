@@ -2,7 +2,7 @@
 
 Создаём пользователя и добавляем его в группу sudo
 ```shell
-sudo adduser ilia
+sudo adduser user_name
 ```
 ```shell
 sudo usermod -aG sudo user_name
