@@ -11,6 +11,9 @@ sudo usermod -aG sudo user_name
 groups user_name
 ```
 
+задаем пароль
+passwd user_name
+
 Для повышения безопасности рекомендуется отключить возможность прямого входа под пользователе root. 
 В Ubuntu, как и во многих других дистрибутивах Linux, это можно сделать, изменив файл /etc/ssh/sshd_config и установив параметр PermitRootLogin в значение no
 ```shell
