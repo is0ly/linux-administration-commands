@@ -150,6 +150,7 @@ rm /stage3-*.tar.*
 ```
 emerge --ask -q app-portage/eix
 emerge --ask -q app-portage/gentoolkit
+emerge --ask -q dev-vcs/git
 ```
 
 ```
