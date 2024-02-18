@@ -69,7 +69,8 @@ GENTOO_MIRRORS="https://ftp.uni-stuttgart.de/gentoo-distfiles/ \
     https://mirror.yandex.ru/gentoo-distfiles/ \
     http://mirror.yandex.ru/gentoo-distfiles/ \
     ftp://mirror.yandex.ru/gentoo-distfiles/"
-GRUB_PLATFORMS="efi-64"```
+GRUB_PLATFORMS="efi-64"
+```
 
 ```
 mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
