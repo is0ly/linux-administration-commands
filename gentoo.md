@@ -1,4 +1,3 @@
-<pre>
 ```bash
 mkfs.vfat -F 32 /dev/nvme0n1p1
 ```
@@ -336,6 +335,3 @@ emerge --depclean
 eclean distfiles
 eclean packages
 ```
-
-</pre>
-
