@@ -1,3 +1,4 @@
+<pre>
 ```bash
 mkfs.vfat -F 32 /dev/nvme0n1p1
 ```
@@ -336,7 +337,5 @@ eclean distfiles
 eclean packages
 ```
 
-
-
-
+</pre>
 
