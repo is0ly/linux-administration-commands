@@ -144,10 +144,12 @@ echo "*/* $(cpuid2cpuflags)" > /etc/portage/package.use/00cpu-flags
 ln -sf ../usr/share/zoneinfo/Europe/Moscow /etc/localtime
 ```
 
-```nvim /etc/locale.gen
+```
+nvim /etc/locale.gen
 ```
 
-```locale-gen
+```
+locale-gen
 ```
 
 ```
