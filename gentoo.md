@@ -1,4 +1,4 @@
-```bash
+```sh
 mkfs.vfat -F 32 /dev/nvme0n1p1
 ```
 
