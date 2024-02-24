@@ -335,3 +335,47 @@ emerge --depclean
 eclean distfiles
 eclean packages
 ```
+
+```
+mount /dev/sda3 /mnt
+
+btrfs su cr /mnt/@
+btrfs su cr /mnt/@home
+btrfs su cr /mnt/@var
+btrfs su cr /mnt/@var_log
+btrfs su cr /mnt/@snapshots
+
+umount /mnt
+
+mkdir /mnt/gentoo/{home,var,var_log,.snapshots}
+
+mount -o rw,noatime,compress=zstd:2,ssd,space_cache=v2,discard=async,subvol=@ /dev/sda3 /mnt/gentoo
+mount -o rw,noatime,compress=zstd:2,ssd,space_cache=v2,discard=async,subvol=@home /dev/sda3 /mnt/gentoo/home
+mount -o rw,noatime,compress=zstd:2,ssd,space_cache=v2,discard=async,subvol=@var /dev/sda3 /mnt/gentoo/var
+mount -o rw,noatime,compress=zstd:2,ssd,space_cache=v2,discard=async,subvol=@var_log /dev/sda3 /mnt/gentoo/var_log
+mount -o rw,noatime,compress=zstd:2,ssd,space_cache=v2,discard=async,subvol=@snapshots /dev/sda3 /mnt/gentoo/.snapshots
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
